@@ -1,0 +1,20 @@
+{{#partial "title" }}
+  Welcome to our Change Machine!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+<h1>Enter your total amount to get change!</h1>
+<form action='/total_change'>
+ <div class="form-group">
+   <label for="change">Your Total Amount</label>
+   <input id="change" name="change" class="form-control" type="text">
+ </div>
+
+ <button type="submit" class="btn">Get Change!</button>
+</form>
+<!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}
